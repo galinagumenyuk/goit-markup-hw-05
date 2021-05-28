@@ -483,6 +483,32 @@ img {
   color: var(--secondary-text-coloure);
 }
 
+.portfolio-thumb {
+  position: relative;
+}
+.portfolio-action {
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #ffffff;
+}
+
 /* футер */
 
 .footer {
@@ -548,4 +574,41 @@ img {
   text-transform: uppercase;
 
   color: #ffffff;
+}
+
+/* Модалка */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+  background-color: #fff;
+}
+.modal-button {
+  display: inline-block;
+  margin-top: 11px;
+  margin-left: 490px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  background-image: url(../images/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: 50%, 50%;
 }
